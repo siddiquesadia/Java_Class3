@@ -7,7 +7,6 @@ function incNum(){
 let value= Number(output.value);
 
 if(value==10){
-    alert(`Out of Stock :(`);
     return false;
 }
 value = value + 1;
@@ -23,6 +22,7 @@ let decrementBtn = document.querySelector(`.decrement`);
 function decNum(){
     let value= Number(output.value);
     if( value==0){
+        alert(`Out of Stock :(`);
         return false;
     }
     value = value - 1;
